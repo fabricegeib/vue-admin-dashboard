@@ -33,7 +33,8 @@
     @extend %large;
 }
 
-@mixin large-text-bold {
+@mixin large-text-bold($color: $white) {
     @extend %large;
     font-weight: bold;
+    color: $color;
 }
