@@ -21,3 +21,19 @@
     line-height: 34px;
     font-weight: bold;
 }
+
+// Body Text
+
+%large {
+    line-height: 37px;
+    font-size: 24px;
+}
+
+@mixin large-text {
+    @extend %large;
+}
+
+@mixin large-text-bold {
+    @extend %large;
+    font-weight: bold;
+}
