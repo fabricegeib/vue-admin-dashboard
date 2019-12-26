@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <FirstComponent msg="My first Vue.js component !" />
+    <FirstComponent msg="My first Vue.js view with props" />
   </div>
 </template>
 
