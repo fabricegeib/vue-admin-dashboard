@@ -29,10 +29,6 @@ body {
 //   @include heading-3;
 // }
 
-// p {
-//   @include large-text-bold($purple);
-// }
-
 #nav {
   padding: 30px;
 
