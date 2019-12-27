@@ -37,6 +37,11 @@ export default {
 
   top: 40px;
   right: 40px;
+
+  color: rgba(255, 255, 255, 0.3);
+  a {
+      color: $white;
+  }
 }
 
 .login {
