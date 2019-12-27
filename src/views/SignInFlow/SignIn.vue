@@ -1,15 +1,23 @@
 <template>
-    <div class="sign-in container">
-        <div class="login">
-            <!-- <h1>Sign In</h1> -->
-        </div>
+  <div class="container">
+    <div class="request">
+      <router-link to="/request">Request an account</router-link>
     </div>
+    <div class="login">
+      <img src="@/assets/img/iamfabriceg-avatar-border.png">
+      <h4>Sign into iamfabriceg.xyz</h4>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Sign In</button>
+      <router-link to="/recover">Forgot your password ?</router-link>
+    </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "SignIn"
-    }
+export default {
+  name: "SignIn"
+}
 </script>
 
 <style scoped lang="scss">
@@ -17,16 +25,56 @@
 @import "@/assets/global-styles/typography.scss";
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .login {
-    height: 50px;
-    width: 50px;
-    background-color: $light-gray;
+
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+h4 {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  text-align: center;
+
+  color: $white;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  height: 60px;
+  width: 100%;
+
+  color: $white;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+button {
+  background: #56CCF2;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  height: 60px;
+  width: 100%;
+
+  color: $white;
+  font-size: 20px;
+  margin-top: 20px;
 }
 </style>
