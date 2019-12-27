@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="request">
+    <div class="request">Don’t have an account ?
       <router-link to="/request">Request an account</router-link>
     </div>
     <div class="login">
@@ -32,11 +32,19 @@ export default {
   min-height: 100vh;
 }
 
-.login {
+.request {
+  position: absolute;
 
+  top: 40px;
+  right: 40px;
+}
+
+.login {
+  width: 400px;
 }
 
 img {
+  max-width: 180px;
   width: 50%;
   height: auto;
 }
@@ -63,12 +71,17 @@ input {
   font-size: 20px;
   padding-left: 20px;
   margin-top: 20px;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 button {
   background: #56CCF2;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  border: none;
 
   height: 60px;
   width: 100%;
@@ -76,5 +89,15 @@ button {
   color: $white;
   font-size: 20px;
   margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+a {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.3);
 }
 </style>
